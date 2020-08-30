@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    body {
+        background: #eee;
+    }
+  
+      .photo-grid {     
+            width: 80%;
+            height: 600px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 0 auto;
+        }
+       
+       .photo-grid  div{
+           background-size: 100% !important;
+       }
+       .thumbnail {
+           display: none;
+       }
+      
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="photo-gallery">
+            <div class="x-container max width">
+                  <div class="photo-grid">
+                        <div class="thumbnail" style="width: 45%; height: 100%; background-image:url(https://images.unsplash.com/photo-1598647914005-0951bb3eec75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80)"></div>
+                        <div style="flex-basis: 50%; height: 49.2%; display:flex; flex-flow: row wrap; gap:10px ">
+                            <div class="thumbnail" style="width: 100%; height: 100%; background-image:url(https://images.unsplash.com/photo-1598647071577-2e171af67c6c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80)"></div>
+                            <div style="flex-basis: 100%; height: 100%; display:flex; flex-flow: row wrap; gap:10px">
+                                <div class="thumbnail" style="width: calc(50% - 5px); height:  calc(50% - 5px); background-image:url(https://images.unsplash.com/photo-1598645728728-f2c3c8343742?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80)"></div>
+                                <div class="thumbnail" style="width: calc(50% - 5px); height:  calc(50% - 5px); background-image:url(https://images.unsplash.com/photo-1598601305318-3067edd5a73c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=645&q=80)"></div>
+                                <div class="thumbnail" style="width: calc(50% - 5px); height: calc(50% - 5px); background-image:url(https://images.unsplash.com/photo-1592669707767-ddb9496bf4a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80)"></div>
+                                <div class="thumbnail" style="width: calc(50% - 5px); height:  calc(50% - 5px); text-align: center; background: turquoise">
+                                    <p style="margin-top: 18%">Some text here</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                     
+                  </div>
+                 
+           </div>
+          </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function() {
+            
+            $(".thumbnail").show(1000);
+  
+        });
+    </script>
+</body>
+</html>
